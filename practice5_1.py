@@ -34,7 +34,7 @@ print(countries[1])
 
 
 # Level 1- Indexing
-Problem 1
+# Problem 1
 fruits = ["Apple", "Banana", "Mango", "Orange"]
 print(fruits[2])
 
