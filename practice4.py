@@ -28,7 +28,7 @@ for i in range (1, 11):
     if i % 2 == 0:
         print(i)
 
-# Off number print
+# Odd number print
 for i in range (1, 11):
     if i % 2 != 0:
         print(i)
