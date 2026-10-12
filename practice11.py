@@ -1,320 +1,320 @@
-# # Comprehensions
+# Comprehensions
 
-# # 1. List Comprehensions
-# # List comprehension can be used to create a new list with less code
+# 1. List Comprehensions
+# List comprehension can be used to create a new list with less code
 
-# # normal for loop
-# numbers = [1, 2, 3, 4, 5]
-# squares = []
-# for number in numbers:
-#     squares.append(number * number)
-# print(squares)
+# normal for loop
+numbers = [1, 2, 3, 4, 5]
+squares = []
+for number in numbers:
+    squares.append(number * number)
+print(squares)
 
-# # List Comprehension 
-# numbers = [1, 2, 3, 4, 5]
-# squares = [number * number for number in numbers]
-# print(squares)
+# List Comprehension 
+numbers = [1, 2, 3, 4, 5]
+squares = [number * number for number in numbers]
+print(squares)
 
-# numbers = [10, 20, 30, 40, 50]
-# result = [number * 2 for number in numbers]
-# print(result)
+numbers = [10, 20, 30, 40, 50]
+result = [number * 2 for number in numbers]
+print(result)
 
-# numbers = [10, 20, 30, 40, 50]
-# result = []
-# for number in numbers:
-#     result.append(number * 2)
-# print(result)
+numbers = [10, 20, 30, 40, 50]
+result = []
+for number in numbers:
+    result.append(number * 2)
+print(result)
 
-# # name length
-# names = ["abdullah", "Rahim", "karim"]
-# lengths = []
-# for name in names:
-#     lengths.append(len(name))
-# print(lengths)
+# name length
+names = ["abdullah", "Rahim", "karim"]
+lengths = []
+for name in names:
+    lengths.append(len(name))
+print(lengths)
 
-# names = ["Abdullah", "Rahim", "Karim"]
-# lengths = [len(name) for name in names]
-# print(lengths)
+names = ["Abdullah", "Rahim", "Karim"]
+lengths = [len(name) for name in names]
+print(lengths)
 
-# # cube practice 
-# numbers = [1, 2, 3, 4, 5]
-# cubes = [number * number * number for number in numbers]
-# print(cubes)
+# cube practice 
+numbers = [1, 2, 3, 4, 5]
+cubes = [number * number * number for number in numbers]
+print(cubes)
 
-# numbers = [1, 2, 3, 4, 5]
-# cubes =[]
-# for number in numbers:
-#     cubes.append(number * number * number)
-# print(cubes)
+numbers = [1, 2, 3, 4, 5]
+cubes =[]
+for number in numbers:
+    cubes.append(number * number * number)
+print(cubes)
 
-# # P2
-# numbers = [10, 20, 30, 40]
-# result = [number + 5 for number in numbers]
-# print(result)
+# P2
+numbers = [10, 20, 30, 40]
+result = [number + 5 for number in numbers]
+print(result)
 
-# numbers = [10, 20, 30, 40]
-# result = []
-# for number in numbers:
-#     result.append(number + 5)
-# print(result)
+numbers = [10, 20, 30, 40]
+result = []
+for number in numbers:
+    result.append(number + 5)
+print(result)
 
-# # P3 *3
-# numbers = [2, 4, 6, 8]
-# result = [number * 3 for number in numbers]
-# print(result)
+# P3 *3
+numbers = [2, 4, 6, 8]
+result = [number * 3 for number in numbers]
+print(result)
 
-# numbers = [2, 4, 6, 8]
-# result = []
-# for number in numbers:
-#     result.append(number * 3)
-# print(result)
-
-
-# # 2. List Comprehension with if condition
-# # Even number
-# # normal for loop
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-# even_numbers = []
-# for number in numbers:
-#     if number % 2 == 0:
-#         even_numbers.append(number)
-# print(even_numbers)
-
-# # List comprehension
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-# even_numbers = [
-#     number for number in numbers
-#     if number % 2 == 0
-# ]
-# print(even_numbers)
-
-# # Odd number
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# odd_numbers = []
-# for number in numbers:
-#     if number % 2 != 0:
-#       odd_numbers.append(number)
-# print(odd_numbers)
-
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# odd_numbers = [
-#     number for number in numbers
-#     if number % 2 != 0
-# ]
-# print(odd_numbers)
-
-# # example
-# numbers = [10, 15, 20, 25, 30, 35]
-# result = [number for number in numbers if number > 20]
-# print(result)
-
-# # p1, p2, p3
-# numbers = [5, 10, 15, 20, 25, 30, 35, 40]
-
-# result = [number for number in numbers if number > 20]
-# print(result)
-
-# multiples_of_10 = [
-#     number for number in numbers
-#     if number % 10 == 0
-# ]
-# print(multiples_of_10)
-
-# odd_numbers = [
-#     number for number in numbers
-#     if number %2 != 0
-# ]
-# print(odd_numbers)
+numbers = [2, 4, 6, 8]
+result = []
+for number in numbers:
+    result.append(number * 3)
+print(result)
 
 
-# # 3. List comprehension with if/else
+# 2. List Comprehension with if condition
+# Even number
+# normal for loop
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+even_numbers = []
+for number in numbers:
+    if number % 2 == 0:
+        even_numbers.append(number)
+print(even_numbers)
 
-# numbers = [1, 2, 3, 4, 5,]
-# results = [
-#     "Even" if number % 2 == 0 else "Odd"
-#     for number in numbers
-# ]
-# print(results)
+# List comprehension
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+even_numbers = [
+    number for number in numbers
+    if number % 2 == 0
+]
+print(even_numbers)
 
-# result = [number for number in numbers if number > 3]
-# print(result)
+# Odd number
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+odd_numbers = []
+for number in numbers:
+    if number % 2 != 0:
+      odd_numbers.append(number)
+print(odd_numbers)
 
-# result = ["Big" if number > 3 else "Small" for number in numbers]
-# print(result)
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+odd_numbers = [
+    number for number in numbers
+    if number % 2 != 0
+]
+print(odd_numbers)
 
-# # 4. Dictonary Comprehension
-# numbers = [1, 2, 3, 4, 5]
-# squares = {
-#     number : number * number
-#     for number in numbers
-# }
-# print(squares)
+# example
+numbers = [10, 15, 20, 25, 30, 35]
+result = [number for number in numbers if number > 20]
+print(result)
 
-# # Normal loop vs Dictionary Comprehension
-# numbers = [1, 2, 3]
-# squares = {}
-# for number in numbers:
-#     squares[number] = number * number
-# print(squares)
+# p1, p2, p3
+numbers = [5, 10, 15, 20, 25, 30, 35, 40]
 
-# numbers = [1, 2, 3]
-# squares = {number: number * number for number in numbers}
-# print(squares)
+result = [number for number in numbers if number > 20]
+print(result)
 
-# # P1
-# numbers = [2, 3, 4]
-# cubes = {number: number * number * number for number in numbers}
-# print(cubes)
+multiples_of_10 = [
+    number for number in numbers
+    if number % 10 == 0
+]
+print(multiples_of_10)
 
-# numbers = [2, 3, 4]
-# cubes = {number: number ** 3 for number in numbers}
-# print(cubes)
+odd_numbers = [
+    number for number in numbers
+    if number %2 != 0
+]
+print(odd_numbers)
 
-# # 5. Dictionary Comprehension with If condition
-# marks = {
-#     "Abdullah": 85,
-#     "Rahim": 35,
-#     "Karim": 70,
-#     "Hasan": 25
-# }
 
-# passed = {
-#     name : mark
-#     for name, mark in marks.items()
-#     if mark >= 40
-# }
-# print(passed)
+# 3. List comprehension with if/else
 
-# prices = {
-#     "Pen": 20,
-#     "Book": 150,
-#     "Bag": 800,
-#     "Pencil": 10
-# }
-# expensive = {
-#     name : price
-#     for name, price in prices.items()
-#     if price >= 100
-# }
-# print(expensive)
+numbers = [1, 2, 3, 4, 5,]
+results = [
+    "Even" if number % 2 == 0 else "Odd"
+    for number in numbers
+]
+print(results)
 
-# # 6. Lambda
-# # Lambda is a small and anonymous (nameless) function, which is usually written in a single line
-# def square(number):
-#     return number * number
-# print(square(5))
+result = [number for number in numbers if number > 3]
+print(result)
 
-# square = lambda number: number * number
-# print(square(5))
+result = ["Big" if number > 3 else "Small" for number in numbers]
+print(result)
 
-# add = lambda a, b: a + b
-# print(add(10,20))
+# 4. Dictonary Comprehension
+numbers = [1, 2, 3, 4, 5]
+squares = {
+    number : number * number
+    for number in numbers
+}
+print(squares)
 
-# # Lambda + Comprehensive
-# numbers = [1, 2, 3, 4, 5]
-# square = lambda x: x * x
-# result = [square(x) for x in numbers]
-# print(result)
+# Normal loop vs Dictionary Comprehension
+numbers = [1, 2, 3]
+squares = {}
+for number in numbers:
+    squares[number] = number * number
+print(squares)
 
-# numbers = [1, 2, 3, 4, 5]
-# result = [x * x for x in numbers]
-# print(result)
+numbers = [1, 2, 3]
+squares = {number: number * number for number in numbers}
+print(squares)
 
-# #  7. Lambda + map()
-# numbers = [1, 2, 3, 4, 5]
-# squares = list(map(lambda number: number * number, numbers))
-# print(squares)
+# P1
+numbers = [2, 3, 4]
+cubes = {number: number * number * number for number in numbers}
+print(cubes)
 
-# numbers = [1, 2, 3, 4, 5]
-# result = list(map(lambda x: x * 2, numbers))
-# print(result)
+numbers = [2, 3, 4]
+cubes = {number: number ** 3 for number in numbers}
+print(cubes)
 
-# # 8. Lambda +. filter()
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-# even_numbers = list(
-#     filter(lambda number: number % 2 == 0, numbers)
-# )
-# print(even_numbers)
+# 5. Dictionary Comprehension with If condition
+marks = {
+    "Abdullah": 85,
+    "Rahim": 35,
+    "Karim": 70,
+    "Hasan": 25
+}
 
-# numbner = [1, 2, 3, 4, 5, 6, 7, 8]
-# odd_numbers = list(
-#     filter(lambda number: number % 2 != 0, numbers)
-# )
-# print(odd_numbers)
+passed = {
+    name : mark
+    for name, mark in marks.items()
+    if mark >= 40
+}
+print(passed)
 
-# # 9. List Cpmprehensive vs map() and filter()
-# # number square
-# # List Comprehensive
-# numbers = [1, 2, 3, 4, 5]
-# result = [number * number for number in numbers]
-# print(result)
+prices = {
+    "Pen": 20,
+    "Book": 150,
+    "Bag": 800,
+    "Pencil": 10
+}
+expensive = {
+    name : price
+    for name, price in prices.items()
+    if price >= 100
+}
+print(expensive)
 
-# # map() and lambda
-# numbers = [1, 2, 3, 4, 5]
-# result = list(map(lambda number: number * number, numbers))
-# print(result)
+# 6. Lambda
+# Lambda is a small and anonymous (nameless) function, which is usually written in a single line
+def square(number):
+    return number * number
+print(square(5))
 
-# # Even and Odd
-# # List. Comprehensive
-# numbers = [1, 2, 3, 4, 5, 6]
-# result = [number for number in numbers if number % 2 == 0]
-# print(result)
+square = lambda number: number * number
+print(square(5))
 
-# numbers = [1, 2, 3, 4, 5, 6]
-# result = [number for number in numbers if number % 2 != 0]
-# print(result)
+add = lambda a, b: a + b
+print(add(10,20))
 
-# # filter() and Lambda
-# numbers = [1, 2, 3, 4, 5, 6]
-# result = list(filter(lambda number: number % 2 == 0, numbers))
-# print(result)
+# Lambda + Comprehensive
+numbers = [1, 2, 3, 4, 5]
+square = lambda x: x * x
+result = [square(x) for x in numbers]
+print(result)
 
-# numbers = [1, 2, 3, 4, 5, 6]
-# result = list(filter(lambda number: number % 2 != 0, numbers))
-# print(result)
+numbers = [1, 2, 3, 4, 5]
+result = [x * x for x in numbers]
+print(result)
 
-# # Problem
-# # Problem 1: List Comprehensive
-# # Find the double of each number in this list
+#  7. Lambda + map()
+numbers = [1, 2, 3, 4, 5]
+squares = list(map(lambda number: number * number, numbers))
+print(squares)
 
-# numbers = [5, 10, 15, 20, 25]
-# result = [number * 2 for number in numbers]
-# print(result)
+numbers = [1, 2, 3, 4, 5]
+result = list(map(lambda x: x * 2, numbers))
+print(result)
 
-# # Problem 2: List Comprehensive + Condition
-# # Extract only the numbers greater than 10 from this list
+# 8. Lambda +. filter()
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+even_numbers = list(
+    filter(lambda number: number % 2 == 0, numbers)
+)
+print(even_numbers)
 
-# numbers = [5, 12, 8, 20, 3, 15, 25]
-# result = [number for number in numbers if number > 10]
-# print(result)
+numbner = [1, 2, 3, 4, 5, 6, 7, 8]
+odd_numbers = list(
+    filter(lambda number: number % 2 != 0, numbers)
+)
+print(odd_numbers)
 
-# # Problem 3: Dictionary Comprehensive
-# # Create a dictionary using the square of each number un this list.
+# 9. List Cpmprehensive vs map() and filter()
+# number square
+# List Comprehensive
+numbers = [1, 2, 3, 4, 5]
+result = [number * number for number in numbers]
+print(result)
 
-# numbers = [2, 3, 4, 5]
-# result = {number: number * number for number in numbers}
-# print(result)
+# map() and lambda
+numbers = [1, 2, 3, 4, 5]
+result = list(map(lambda number: number * number, numbers))
+print(result)
 
-# # Problem 4: Dictionary Comprehensive + Condition
+# Even and Odd
+# List. Comprehensive
+numbers = [1, 2, 3, 4, 5, 6]
+result = [number for number in numbers if number % 2 == 0]
+print(result)
 
-# marks = {
-#     "Abdullah": 85,
-#     "Rahim": 35,
-#     "Karim": 70,
-#     "Hasan": 25,
-#     "Nila": 90
-# }
-# passed_students = {
-#     name: score
-#     for name, score in marks.items()
-#     if score >= 40
-# }
-# print(passed_students)
+numbers = [1, 2, 3, 4, 5, 6]
+result = [number for number in numbers if number % 2 != 0]
+print(result)
 
-# # Problem 5: Lambda
+# filter() and Lambda
+numbers = [1, 2, 3, 4, 5, 6]
+result = list(filter(lambda number: number % 2 == 0, numbers))
+print(result)
 
-# cube = lambda number: number * number * number
-# print(cube(3))
+numbers = [1, 2, 3, 4, 5, 6]
+result = list(filter(lambda number: number % 2 != 0, numbers))
+print(result)
+
+# Problem
+# Problem 1: List Comprehensive
+# Find the double of each number in this list
+
+numbers = [5, 10, 15, 20, 25]
+result = [number * 2 for number in numbers]
+print(result)
+
+# Problem 2: List Comprehensive + Condition
+# Extract only the numbers greater than 10 from this list
+
+numbers = [5, 12, 8, 20, 3, 15, 25]
+result = [number for number in numbers if number > 10]
+print(result)
+
+# Problem 3: Dictionary Comprehensive
+# Create a dictionary using the square of each number un this list.
+
+numbers = [2, 3, 4, 5]
+result = {number: number * number for number in numbers}
+print(result)
+
+# Problem 4: Dictionary Comprehensive + Condition
+
+marks = {
+    "Abdullah": 85,
+    "Rahim": 35,
+    "Karim": 70,
+    "Hasan": 25,
+    "Nila": 90
+}
+passed_students = {
+    name: score
+    for name, score in marks.items()
+    if score >= 40
+}
+print(passed_students)
+
+# Problem 5: Lambda
+
+cube = lambda number: number * number * number
+print(cube(3))
 
 # Problem 6
 
