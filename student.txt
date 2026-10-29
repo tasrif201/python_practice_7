@@ -1,0 +1,4 @@
+Name: Abdullah
+Subject: Python
+Goal: Learn Programming
+Status: Learing Python
