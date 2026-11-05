@@ -1,0 +1,10 @@
+{
+    "name": "Abdullah",
+    "age": 27,
+    "city": "Dhaka",
+    "skills": [
+        "Pytjon",
+        "Software Testing",
+        "Cybersecurity"
+    ]
+}
